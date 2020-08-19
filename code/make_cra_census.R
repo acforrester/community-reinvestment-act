@@ -1,14 +1,21 @@
+## ============================================================================
+## make_cra_census.R
+## ============================================================================
+## Author: AC Forrester
+## ============================================================================
+## This script reads in the CRA Census flat files and saves them as a CSV.
+## It also subsets the Census data to include variables relevant to the CRA 
+## and HMDA, i.e. tract median family income, minority population, etc.
 
 
+## IN PROGRESS
 
 make_cra_census <- function()
 {
   
+  require(tidyverse)
   
 }
-
-
-library(tidyverse)
 
 
 census_width <- c(4, 4, 2, 3, 6, 8, 8, 6, 8, 6, 8, 8, rep(8, 7), 3, 1, 1, 1, 1)

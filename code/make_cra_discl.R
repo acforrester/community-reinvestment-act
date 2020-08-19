@@ -1,8 +1,8 @@
-
- 
-
 make_cra_discl <- function(years, zip_base, csv_base)
 {
+  
+  # requires `tidyverse`
+  require(tidyverse)
   
   # apply over years 
   lapply(years, function(year){
@@ -19,22 +19,23 @@ make_cra_discl <- function(years, zip_base, csv_base)
     ## SET COL NAMES
     
     # county/bank
-    county_names <- c('table_id', 'respondent_id', 'agency_code',
-                      'activity_year', 'loan_type', 'action_taken_type',
-                      'state_code', 'county_code', 'msamd', 'assessment_area_num',
+    county_names <- c('table_id'      , 'respondent_id', 'agency_code',
+                      'activity_year' , 'loan_type', 'action_taken_type',
+                      'state_code'    , 'county_code', 'msamd', 'assessment_area_num',
                       'partial_county', 'split_county', 'population_class',
-                      'income_group', 'report_level', 
+                      'income_group'  , 'report_level', 
                       'num_loans_100k', 'vol_loans_100k',
                       'num_loans_250k', 'vol_loans_250k',
                       'num_loans_1mil', 'vol_loans_1mil',
                       'num_loans_1mil_rev', 'vol_loans_1mil_rev',
-                      'num_affiliate', 'vol_affiliate')
+                      'num_affiliate' , 'vol_affiliate')
     
     # assessment area activity
     if(year == 1996){
       
       activity_names <- c('table_id', 'respondent_id', 'agency_code', 
-                          'activity_year', 'loan_type', 'state_code', 'county_code', 'msamd', 
+                          'activity_year', 'loan_type', 'state_code', 
+                          'county_code', 'msamd', 
                           'assessment_area_num', 'partial_county', 'split_county',
                           'report_level', 'num_originated', 'vol_originated',
                           'num_purchased', 'vol_purchased', 'filler')
@@ -42,14 +43,15 @@ make_cra_discl <- function(years, zip_base, csv_base)
     } else {
       
       activity_names <- c('table_id', 'respondent_id', 'agency_code', 
-                          'activity_year', 'loan_type', 'state_code', 'county_code', 'msamd', 
+                          'activity_year', 'loan_type', 'state_code',
+                          'county_code', 'msamd', 
                           'assessment_area_num', 'partial_county', 'split_county',
                           'report_level', 'num_originated', 'vol_originated',
                           'num_originated_1mil_grev', 'vol_originated_1mil_grev',
                           'num_purchased', 'vol_purchased', 'filler')
     }
     
-    # commnty dev/consortium
+    # community dev/consortium
     commdev_names <- c()
     
     # assessment areas
@@ -61,22 +63,19 @@ make_cra_discl <- function(years, zip_base, csv_base)
     ## --------------------------------------------------- ##
     ## SET WIDTHS BY YEAR
     
-    
     if(year == 1996){
       county_width <- c(4, 10, 1, 4, 1, 1, 2, 3, 4, 4, 1, 1, 1, 3, 3, rep(c(6,8), times = 5))
       #comdev_width <- c()
       #active_width <- c()
       assess_width <- c(4, 10, 1, 4, 2, 3, 4, 7, 4, 1, 1, 1, 3, 1, 60)
       
-    }
-    if(year %in% 1997:2003){
+    } else if(year %in% 1997:2003){
       county_width <- c(5, 10, 1, 4, 1, 1, 2, 3, 4, 4, 1, 1, 1, 3, 3, rep(c(6,8), times = 5))
       #comdev_width <- c()
       #active_width <- c()
       assess_width <- c(5, 10, 1, 4, 2, 3, 4, 7, 4, 1, 1, 1, 3, 1, 67)
       
-    }
-    if(year %in% 2004:2020){
+    } else  if(year %in% 2004:2020){
       county_width <- c(5, 10, 1, 5, 1, 1, 2, 3, 4, 4, 1, 1, 1, 3, 3, rep(10, times = 10))
       #comdev_width <- c()
       #active_width <- c()
@@ -208,7 +207,6 @@ make_cra_discl <- function(years, zip_base, csv_base)
       
       # clean up
       rm(dat_discl); gc()
-      
       
       
       ## --------------------------------------------------- ##

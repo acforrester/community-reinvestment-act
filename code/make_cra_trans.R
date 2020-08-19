@@ -1,16 +1,8 @@
-
-
- 
-
-year <- 2018
-
-csv_base <- '../data/trans/csv'
-zip_base <- '../data/trans/zip'
-
-
-
 make_cra_trans <- function(years, zip_base, csv_base)
 {
+  
+  # requires `tidyverse`
+  require(tidyverse)
   
   # apply over years
   lapply(years, function(year){
@@ -73,4 +65,3 @@ make_cra_trans <- function(years, zip_base, csv_base)
   })
   
 }
-
