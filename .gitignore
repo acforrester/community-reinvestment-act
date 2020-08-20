@@ -1,3 +1,7 @@
 **.csv
 **.dat
 code\.Rproj.user\**
+data/discl/zip/*
+data/aggr/zip/*
+data/trans/zip/*
+data/census/zip/*

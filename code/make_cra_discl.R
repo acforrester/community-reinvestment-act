@@ -19,16 +19,19 @@ make_cra_discl <- function(years, zip_base, csv_base)
     ## SET COL NAMES
     
     # county/bank
-    county_names <- c('table_id'      , 'respondent_id', 'agency_code',
-                      'activity_year' , 'loan_type', 'action_taken_type',
-                      'state_code'    , 'county_code', 'msamd', 'assessment_area_num',
-                      'partial_county', 'split_county', 'population_class',
-                      'income_group'  , 'report_level', 
-                      'num_loans_100k', 'vol_loans_100k',
-                      'num_loans_250k', 'vol_loans_250k',
-                      'num_loans_1mil', 'vol_loans_1mil',
-                      'num_loans_1mil_rev', 'vol_loans_1mil_rev',
-                      'num_affiliate' , 'vol_affiliate')
+    county_names <- c('table_id'           , 
+                      'respondent_id'      , 'agency_code'       , 'activity_year', 
+                      'loan_type'          , 'action_taken_type' ,
+                      'state_code'         , 'county_code'       , 'msamd',
+                      'assessment_area_num',
+                      'partial_county'     , 'split_county'      , 
+                      'population_class'   , 'income_group'      , 
+                      'report_level'       , 
+                      'num_loans_100k'     , 'vol_loans_100k'    ,
+                      'num_loans_250k'     , 'vol_loans_250k'    ,
+                      'num_loans_1mil'     , 'vol_loans_1mil'    ,
+                      'num_loans_1mil_rev' , 'vol_loans_1mil_rev',
+                      'num_affiliate'      , 'vol_affiliate')
     
     # assessment area activity
     if(year == 1996){
@@ -76,10 +79,10 @@ make_cra_discl <- function(years, zip_base, csv_base)
       assess_width <- c(5, 10, 1, 4, 2, 3, 4, 7, 4, 1, 1, 1, 3, 1, 67)
       
     } else  if(year %in% 2004:2020){
-      county_width <- c(5, 10, 1, 5, 1, 1, 2, 3, 4, 4, 1, 1, 1, 3, 3, rep(10, times = 10))
+      county_width <- c(5, 10, 1, 4, 1, 1, 2, 3, 5, 4, 1, 1, 1, 3, 3, rep(10, times = 10))
       #comdev_width <- c()
       #active_width <- c()
-      assess_width <- c(4, 10, 1, 4, 2, 3, 5, 7, 4, 1, 1, 1, 3, 1, 96)
+      assess_width <- c(5, 10, 1, 4, 2, 3, 5, 7, 4, 1, 1, 1, 3, 1, 96)
       
     }
     
