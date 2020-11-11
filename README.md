@@ -7,7 +7,7 @@ This repository is a project to collect lending data reported through the Commun
 The CRA lending data are broken down into a series of 3 reports: the aggregate data, disclosure data, and transmittal sheet.  The following text describes each of the CRA datasets in more detail.
 
 ### Aggregate Data
-Hence the name, the 'aggregate' data provide aggregated data on the number and volume of small business and farm loans originated and purchased.  These data provide lending counts and volumes by Census tract -- lowest level of geography available in the CRA.  From 1997 onwards the aggregate data provide the aforementioned information by bank by county.
+Hence the name, the 'aggregate' data provide aggregated data on the number and volume of small business and farm loans originated and purchased.  These data provide lending counts and volumes by Census tract &mdash the lowest level of geography available in the CRA data.  From 1997 onwards the aggregate data provide the aforementioned information by bank by county.
 
 ### Disclosure Data
 Disclosure data include key information on lending by banks within and outside their CRA assessment areas.  These data include measures of small business and farm lending by bank, community development and consortium or third party lending, and assessment area delineations by bank.  These data are particulary useful for determining banks' lending activity by county and identifying their assessment areas by Census tract.
