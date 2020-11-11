@@ -40,4 +40,4 @@ The transmittal sheet provides a register of all institutions that submitted dat
 A caveat to the CRA (and HMDA) data is that the geographic units, either Census tract or county, are reported in nominal terms.  While this is less of an issue for counties, which tend to be geographically consistent over time, it can be a inescapable problem for more granular analyses with Census tracts.  While Census tracts are designed to be relatively permanent geographic boundaries, the Census Bureau revises some tract delineations with each round of the Decennial Census.  It is therefore important to account for such changes by harmonizing the tract boundaries.  The most common way to do this uses either the [Longitudinal Tract Database](https://s4.ad.brown.edu/projects/diversity/Researcher/Bridging.htm) or [relationship files from the Census Bureau](https://www.census.gov/geographies/reference-files/2010/geo/relationship-files.html).
 
 ## Changelog
-- 08-XX-2020 - Initial commit with codes.
+- 11-11-2020 - Make repo public.
