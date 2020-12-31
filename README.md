@@ -1,6 +1,8 @@
 # Community Reinvestment Act Data
 
-This repository is a project to collect lending data reported through the Community Reinvestment Act (CRA) and make it available in a usable form.  The codes here are designed to collect, assemble, and lightly clean the flat files released by the Federal Financial Institutions Examinations Council (FFIEC).  These data provide the number and volume of small business and small farm loans originated and purchased by covered institutions and are further broken down by loan amount and business' gross annual revenue.
+This repository is a project to collect lending data reported through the Community Reinvestment Act (CRA) and make it available in a usable form (honestly, fixed width is the worst).  The codes here are designed to collect, assemble, and lightly clean the flat files released by the Federal Financial Institutions Examinations Council (FFIEC).  These data provide the number and volume of small business and small farm loans originated and purchased by covered institutions and are further broken down by loan amount and business' gross annual revenue.
+
+The end goal is to break down the flat files into the different CRA reports and publish them in an accessible format.
 
 ## CRA Datasets
 
@@ -41,3 +43,4 @@ A caveat to the CRA (and HMDA) data is that the geographic units, either Census 
 
 ## Changelog
 - 11-11-2020 - Make repo public.
+- 12-21-2020 - Update README
