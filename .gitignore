@@ -1,7 +1,25 @@
-**.csv
-**.dat
-code\.Rproj.user\**
-data/discl/zip/*
-data/aggr/zip/*
-data/trans/zip/*
-data/census/zip/*
+# R and Rstudio 
+.Rproj.user/*
+*.Rproj
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user
+
+# all zip files
+**.zip
+
+# all census
+data/census/**
+
+# SQL
+data/*.sqlite
+data/sql/**
+
+# assembled
+data/aggr/*.txt
+data/trans/*.txt
+data/discl/*.txt
+
+# temp
+docs/**
