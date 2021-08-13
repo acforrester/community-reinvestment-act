@@ -12,7 +12,7 @@ The CRA lending data are broken down into a series of 3 reports: the aggregate d
 Transmittal Sheet
 =================
 
-The transmittal sheet provides a register of all institutions that submitted data in a given year.  It provides information that can be used to link the CRA with other data, such as HMDA, Call Reports, FDIC Summary of Deposits, etc.  The data themselves include the institution's primary regulator, address, and state.  All instutitions in the CRA data are identified by the combination of an institution's ``respondent_id`` and ``agency_code``.  The following table outlines the regulatory agency codes reported in the ``agency_code``:
+The transmittal sheet provides a register of all institutions that submitted data in a given year.  It provides information that can be used to link the CRA with other data, such as HMDA, Call Reports, FDIC Summary of Deposits, etc.  The data themselves include the institution's primary regulator, address, and state.  All institutions in the CRA data are identified by the combination of an institution's ``respondent_id`` and ``agency_code``.  The following table outlines the regulatory agency codes reported in the ``agency_code``:
 
 +-------------+--------------------------------------------+--------------+
 | Agency Code | Agency Name                                | Abbreviation |
@@ -36,7 +36,7 @@ Hence the name, the 'aggregate' data provide aggregated data on the number and v
 Disclosure Data
 ===============
 
-Disclosure data include key information on lending by banks within and outside their CRA assessment areas.  These data include measures of small business and farm lending by bank, community development and consortium or third party lending, and assessment area delineations by bank.  These data are particulary useful for determining banks' lending activity by county and identifying their assessment areas by Census tract.
+Disclosure data include key information on lending by banks within and outside their CRA assessment areas.  These data include measures of small business and farm lending by bank, community development and consortium or third party lending, and assessment area delineations by bank.  These data are particularly useful for determining banks' lending activity by county and identifying their assessment areas by Census tract.
 
 Data Available
 ==============
@@ -102,4 +102,4 @@ Changelog
 =========
 
 - 11-11-2020 - Make repo public.
-- 08-05-2021 - Major updates to data, code, and documentation
+- 08-13-2021 - Major updates to data, code, and documentation
